@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <head>
+    <title>Hyozzi Challenge</title>
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon.png">
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h2 id="clock">00:00</h2>
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" required>
+    </form><!--todo-form-->
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <p></p>
+      <p></p>
+    </div><!--weather-->
+    <script src="js\greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js\background.js"></script>
+    <script src="js\todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>

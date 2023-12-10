@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  color: #333;
+  font-size: 14px;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+  height: 100vh;
+}
+
+#clock {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#login-form,
+#greeting {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#greeting {
+  font-size: 30px;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #333; /* 밑줄 스타일 */
+  outline: none;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  text-align: center;
+  width: 250px;
+}
+
+#todo-form {
+  position: absolute;
+  top: 41%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#login-form button {
+  display: none;
+}
+
+#todo-list {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 260px;
+  text-align: center;
+  line-height: 30px;
+}
+
+#todo-list button {
+  float: right;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+#todo-list button::before,
+#todo-list button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  background-color: #333;
+  transform-origin: center;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#todo-list button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#quote {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 5px;
+}
+
+#weather {
+  position: absolute;
+  right: 1%;
+}
